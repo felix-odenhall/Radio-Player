@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Meb App - Project</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body onload="createLiveRadio()">
+    <div class="radio-player">
+      <img class="live-img" src="" alt="" />
+        <p class="playing-now"></p>
+        <audio autoplay class="liveAudio" id="musicPlayer" src=""></audio>
+        <div class="radio-player-controls">
+        <input type="button" onclick="playRadio()" id="play-button" value="Play">
+        <input type="button" onclick="pauseRadio()" id="pause-button" value="Pause">
+        </div>
+        <input type="range" id="change_vol" onchange="changeVolume()" step="0.05" min="0" max="1" value="1">
+        <a href="../index.html">Back</a>
+      </div>
+    </div>
+    <script src="../js/app.js"></script>
+    <script src="../js/radioPlayer.js"></script>
+  </body>
+</html>
