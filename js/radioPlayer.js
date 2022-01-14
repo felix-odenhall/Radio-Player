@@ -35,8 +35,12 @@ async function populateRadioPlayer() {
   });
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
+
 //PARAM IS A BAD VARIABLE NAME // Sorted - changed param to id
 function retriveUrl(id) {
   const searchUrlParams = new URLSearchParams(window.location.search);
   return searchUrlParams.get(id);
 }
+
+//https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams

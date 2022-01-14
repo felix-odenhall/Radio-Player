@@ -30,12 +30,14 @@ async function createRadioLinks() {
       channelsArray[i].channeltype != "Extrakanaler" &&
       channelsArray[i].channeltype != "Minoritet och språk"
     ) {
-      createRadioLinks(i, radioLinkContainer, channelsArray);
+      createRadioLinkImg(i, radioLinkContainer, channelsArray);
     }
   }
 }
 
-function createRadioLinks(i, radioLinkContainer, channelsArray) {
+// Use break?
+
+function createRadioLinkImg(i, radioLinkContainer, channelsArray) {
   let createRadioLink = document.createElement("a");
   createRadioLink.className = "radio-link";
   createRadioLink.href = `./radioStation/?id=${channelsArray[i].id}`;
