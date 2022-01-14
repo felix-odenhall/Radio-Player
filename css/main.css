@@ -46,7 +46,7 @@ header h3 {
   font-weight: 400;
 }
 
-.radio-logo-container {
+#radio-logo-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
