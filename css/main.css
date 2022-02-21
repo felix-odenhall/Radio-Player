@@ -37,7 +37,8 @@ header {
 header img {
   -webkit-filter: invert(1) saturate(100%);
           filter: invert(1) saturate(100%);
-  width: 50%;
+  width: 70%;
+  max-width: 500px;
 }
 
 header h1 {
